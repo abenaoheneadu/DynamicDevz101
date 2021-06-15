@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
-                setCountText();
+               setCountText();
             }
         });
 //        if(savedInstanceState != null){
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setCountText() {
-        userNameTextView.setText("Count : " + count);
+        userNameTextView.setText("Age : " + count);
     }
 
 
@@ -66,6 +66,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         count = savedInstanceState.getInt("COUNT_KEY");
-        setCountText();
+       setCountText();
     }
 }
